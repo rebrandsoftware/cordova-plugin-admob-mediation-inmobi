@@ -1,0 +1,34 @@
+{
+  "name": "cordova-plugin-admob-mediation-inmobi",
+  "version": "1.0.0",
+  "description": "AdMob Mediation Adapter for InMobi",
+  "cordova": {
+    "id": "cordova-plugin-admob-mediation-InMobi",
+    "platforms": [
+      "android",
+	  "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rebrandsoftware/cordova-plugin-admob-mediation-inmobi.git"
+  },
+  "keywords": [
+    "ecosystem:cordova", 
+    "cordova-android", 
+    "cordova-ios", 
+    "cordova", 
+    "plugin", 
+	"admob",
+	"inmobi",
+	"mediation"
+  ],
+  "author": {
+    "name": "rebrandsoftware"
+  },
+  "license": "MIT",
+  "bugs" : {
+	"url" : "https://github.com/rebrandsoftware/cordova-plugin-admob-mediation-inmobi/issues"
+  }, 
+  "homepage" : "https://github.com/rebrandsoftware/cordova-plugin-admob-mediation-inmobi"
+}
