@@ -58,6 +58,7 @@
 			    <meta-data android:name="com.google.android.gms.version"
 			                android:value="@integer/google_play_services_version"/>
 		</config-file>
+		<source-file src="libadapterinmobi.jar" target-dir="libs" />
 	    <source-file src="src/android/InMobi-6.0.4.jar" target-dir="libs" />
     </platform>
 
@@ -71,9 +72,14 @@
 				<true/> 
 			</dict>
 		</config-file>
+		
+		<header-file src="GADInMobiExtras.h" />
+		<header-file src="GADMAdapterInMobi.h" />		
+        <source-file src="libAdapterInMobi.a" framework="true" />
+		
 		<framework src="src/ios/InMobiSDK.framework" custom="true"/>
-		<framework src="AdSupport.framework" />
-		<framework src="AudioToolbox.framework" />
+		<framework src="AdSupport.framework" weak="true" />
+		<framework src="AudioToolbox.framework" weak="true" />
 		<framework src="AVFoundation.framework" />
 		<framework src="CoreLocation.framework" />
 		<framework src="CoreTelephony.framework" />
@@ -83,7 +89,7 @@
 		<framework src="MessageUI.framework" />
 		<framework src="SafariServices.framework" />
 		<framework src="Security.framework" />
-		<framework src="Social.framework" />
+		<framework src="Social.framework" weak="true" />
 		<framework src="StoreKit.framework" />
 		<framework src="SystemConfiguration.framework" />
 		<framework src="libsqlite3.0.dylib" />
